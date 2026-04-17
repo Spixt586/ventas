@@ -13,7 +13,41 @@ function calcularComisión(numeroEnVentas, PrecioProducto) {
     return comision
 }
 
+function validarCampo(id){
+    let valor = recuperarTexto(id).trim();
+    let error = document.getElementById("error-" + id);
+
+    error.textContent = "";
+
+    if(valor === ""){
+        error.textContent = "Este campo no puede estar vacío";
+        return false;
+    }
+
+    if(!/^\d+$/.test(valor)){
+        error.textContent = "Solo se permiten números";
+        return false;
+    }
+
+    if(valor.length > 5){
+        error.textContent = "Máximo 5 caracteres";
+        return false;
+    }
+
+    return true;
+}
+
 function calcular(){
+
+    let esValido = true;
+
+    if(!validarCampo("txtSueldoBase")) esValido = false;
+    if(!validarCampo("txtVentas")) esValido = false;
+    if(!validarCampo("txtPrecio")) esValido = false;
+
+    if(!esValido){
+        return;
+    }
     //recuperamos el valor de las cajas de texto
     let sueldoBaseStr = recuperarTexto("txtSueldoBase");
     let ventaStr = recuperarTexto("txtVentas");

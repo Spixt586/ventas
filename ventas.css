@@ -21,6 +21,14 @@ body {
     min-height: 100vh;
 }
 
+small[id^="error-"] {
+  color: red;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
 /* ========================= */
 /* CONTENEDOR (MOBILE FIRST) */
 /* ========================= */

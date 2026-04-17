@@ -1,6 +1,10 @@
-Actúa como un programador senior en full-stack que sea especializado en Frontend. 
-El diseño del sistema quiero que se adapte a estándares actuales de diseño, 
-colores quiero que sean de la temática de BTC, con negros, blancos y naranjas, 
-puedes ser neón, no quiero que topes nada de JS, ademas que se mantengas los ids de HTML y CSS
-, no cambies nombres, no elimines, ni pierdas los IDs, tampoco uses librerías externas, 
-solo usa CSS y HTML y que el diseño sea Responsive
+Aun no terminé. Vamos denuevo Quiero que te comportes ahora como un full-stack 
+especializado en Backend. Necesito validar inputs en JS. Cada mensaje debe estar abajo del input. 
+NO USAR ALERT Quiero que cada error salga en rojo y con cursiva. Las validaciones: deben ser números si o si. 
+maximo de 5 carácteres. 
+No puede estar vacio. 
+Debes usar los mismos IDs, no cambies ninguno, ni los borres, ni los pierdas. 
+Solo usar los Ids existentes dentro del html. 
+Usar onblur para validar cuando el usuario salga del input No modificar IDs existentes. 
+Mostrar errores en un elemento debajo del input. 
+Devuelve solo lo que tengo que modificar o añadir (HTML, CSS y JS) no todo el código
