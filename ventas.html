@@ -5,20 +5,22 @@
     <title>Calculadora de Comisiones</title>
     <link rel="stylesheet" href="ventas.css">
     <script src="ventas.js"></script>
+    <script src="utils.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
     <div class="contenedor">
-        <h1>Calculadora de Comisiones</h1>
+        <h1>₿ Calculadora de Comisiones</h1>
 
-        <label>Salario Base:</label>
-        <input type="text" id="txtSueldoBase">
+        <label>Salario Base</label>
+        <input type="text" id="txtSueldoBase" placeholder="$ 0.00">
 
-        <label>Número de ventas:</label>
-        <input type="text" id="txtVentas">
+        <label>Número de ventas</label>
+        <input type="text" id="txtVentas" placeholder="Ej: 10">
 
-        <label>Precio del producto:</label>
-        <input type="text" id="txtPrecio">
+        <label>Precio del producto</label>
+        <input type="text" id="txtPrecio" placeholder="$ 0.00">
 
         <button onclick="calcular();">Calcular Comisión</button>
 
@@ -28,6 +30,5 @@
         <p>Total: <span id="spTotal"></span></p>
     </div>
 
-    
 </body>
 </html>
